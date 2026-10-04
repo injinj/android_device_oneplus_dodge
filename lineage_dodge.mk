@@ -28,3 +28,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=CPH2653 \
     SystemDevice=OP5D55L1 \
     SystemName=CPH2653
+
+# AOHP (Android Open Harness Project) agent harness: Driver, OpenClaw app, containerd, Debian template
+$(call inherit-product-if-exists, vendor/aohp/aohp.mk)
